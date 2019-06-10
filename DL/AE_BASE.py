@@ -54,9 +54,9 @@ class AE_BASE():
     def setup_logging(self):        
         experiments_root_dir = 'experiments'
         self.config.model_name = const.get_model_name(self.config.model_name, self.config)
-        self.config.summary_dir = os.path.join(experiments_root_dir+"\\"+self.config.log_dir+"\\", self.config.model_name)
-        self.config.checkpoint_dir = os.path.join(experiments_root_dir+"\\"+self.config.checkpoint_dir+"\\", self.config.model_name)
-        self.config.results_dir = os.path.join(experiments_root_dir+"\\"+self.config.result_dir+"\\", self.config.model_name)
+        self.config.summary_dir = os.path.join(experiments_root_dir+"/"+self.config.log_dir+"/", self.config.model_name)
+        self.config.checkpoint_dir = os.path.join(experiments_root_dir+"/"+self.config.checkpoint_dir+"/", self.config.model_name)
+        self.config.results_dir = os.path.join(experiments_root_dir+"/"+self.config.result_dir+"/", self.config.model_name)
 
         #Flags
         flags_list = ['train', 'restore', 'plot', 'early_stopping']
